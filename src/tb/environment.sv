@@ -41,7 +41,7 @@ class environment;
 
             s_axis.tvalid = 1'b1;
 
-            for (int i = 0; i < 256; i = i + 1) begin
+            for (int i = 0; i < SAMPLE_NUM; i = i + 1) begin
                 s_axis.tdata = sin_mem[i];
                 @(posedge dut_if.clk_i);
             end
