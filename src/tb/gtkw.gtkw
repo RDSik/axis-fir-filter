@@ -1,0 +1,47 @@
+[*]
+[*] GTKWave Analyzer v3.4.0 (w)1999-2022 BSI
+[*] Wed Jan  1 17:21:23 2025
+[*]
+[dumpfile] "/home/rds/fpga/my_projects/verilog-fir-filter/src/tb/fir_filter_tb.vcd"
+[dumpfile_mtime] "Wed Jan  1 17:14:45 2025"
+[dumpfile_size] 143412547
+[savefile] "/home/rds/fpga/my_projects/verilog-fir-filter/src/tb/gtkw.gtkw"
+[timestart] 0
+[size] 1920 916
+[pos] -103 -103
+*-24.121811 48390000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+[treeopen] fir_filter_tb.
+[sst_width] 314
+[signals_width] 150
+[sst_expanded] 1
+[sst_vpaned_height] 255
+@28
+fir_filter_tb.clk_i
+fir_filter_tb.arstn_i
+@22
+fir_filter_tb.dut.acc_o[447:0]
+fir_filter_tb.dut.reg_o[447:0]
+fir_filter_tb.dut.fir_cnt[4:0]
+fir_filter_tb.dut.fir_i[15:0]
+@8022
+fir_filter_tb.dut.fir_o[15:0]
+@20001
+-
+@28
+fir_filter_tb.dut.reg_en
+@8022
+fir_filter_tb.m_axis.tdata[15:0]
+@20000
+-
+@28
+fir_filter_tb.m_axis.tready
+fir_filter_tb.m_axis.tvalid
+@8022
+fir_filter_tb.s_axis.tdata[15:0]
+@20000
+-
+@28
+fir_filter_tb.s_axis.tready
+fir_filter_tb.s_axis.tvalid
+[pattern_trace] 1
+[pattern_trace] 0

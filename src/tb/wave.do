@@ -2,8 +2,6 @@ vlib work
 vmap work
 
 vlog fir_filter_tb.sv
-vlog fir_filter_if.sv
-vlog environment.sv
 vlog ../areg.sv
 vlog ../fir_filter.sv
 vlog ../axis_if.sv
@@ -19,10 +17,12 @@ add wave -expand -color #ff9911 -radix hex -group TOP \
 /fir_filter_tb/dut/arstn_i \
 /fir_filter_tb/dut/coe_mem \
 /fir_filter_tb/dut/reg_o   \
+/fir_filter_tb/dut/acc_o   \
 /fir_filter_tb/dut/fir_o   \
 /fir_filter_tb/dut/fir_i   \
 /fir_filter_tb/dut/fir_cnt \
 /fir_filter_tb/dut/reg_en  \
+/fir_filter_tb/sin_mem     \
 
 add wave -expand -color #cccc00 -radix hex -group M_AXIS \
 /fir_filter_tb/m_axis/tdata  \

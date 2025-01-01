@@ -1,3 +1,7 @@
+syn/*
+!Manifest.py
+!fir_filter.sdc
+!quartus_preflow.tcl
 obj_dir
 work
 *.vcd
