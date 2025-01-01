@@ -41,9 +41,11 @@ class environment;
 
             s_axis.tvalid = 1'b1;
 
-            for (int i = 0; i < 256; i = i + 1) begin
-                s_axis.tdata = sin_mem[i];
-                @(posedge dut_if.clk_i);
+            repeat (SAMPLE_NUM) begin
+                for (int i = 0; i < 256; i = i + 1) begin
+                    s_axis.tdata = sin_mem[i];
+                    @(posedge dut_if.clk_i);
+                end
             end
 
             s_axis.tvalid = 1'b0;
