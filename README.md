@@ -1,7 +1,7 @@
 <div align="center">
 
-[![Verilator Simulation](https://github.com/RDSik/verilog-fir-filter/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/RDSik/verilog-fir-filter/actions/workflows/main.yml)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/RDSik/si5340-config-loader/blob/master/LICENSE.txt)
+[![Verilator Simulation](https://github.com/RDSik/verilog-fir-filter/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/RDSik/axis-fir-filter/actions/workflows/main.yml)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/RDSik/axis-fir-filter/blob/master/LICENSE.txt)
 
 </div><br/><br/>
 
@@ -9,7 +9,7 @@
 
 ## Dependencies 
 
-`cocotb`, `pytest`, `python`, `chocolatey`, `winget`
+`python`, `chocolatey`, `winget`
 
 ## Installation
 
@@ -18,8 +18,8 @@
 
 ### Clone repository:
 ```bash
-git clone https://github.com/RDSik/verilog-fir-filter.git
-cd verilog-fir-filter
+git clone https://github.com/RDSik/axis-fir-filter.git
+cd axis-fir-filter
 ```
 
 ### Download packages:
@@ -58,6 +58,6 @@ do wave.do
 
 ### Using Verilator:
 ```bash
-cd src/tb
+cd src/tb  
 make
 ```
