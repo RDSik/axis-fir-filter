@@ -1,5 +1,5 @@
 /* verilator lint_off TIMESCALEMOD */
-module areg #(
+module acc_reg #(
     parameter DATA_WIDTH = 16,
     parameter COE_WIDTH  = 16
 ) (

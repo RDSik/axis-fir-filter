@@ -30,7 +30,7 @@ module fir_filter #(
     generate
         for (i  = 0; i < COE_NUM; i = i + 1) begin : generate_block_identifier
             if (i == 0) begin
-                areg #(
+                acc_reg #(
                     .DATA_WIDTH (DATA_WIDTH),
                     .COE_WIDTH  (COE_WIDTH )
                 ) i_areg (
@@ -44,7 +44,7 @@ module fir_filter #(
                     .acc_o  (acc_o[(i+1)*DATA_WIDTH-1:i*DATA_WIDTH])
                 );
             end else if (i == COE_NUM - 1) begin
-                areg #(
+                acc_reg #(
                     .DATA_WIDTH (DATA_WIDTH),
                     .COE_WIDTH  (COE_WIDTH )
                 ) i_areg (
@@ -58,7 +58,7 @@ module fir_filter #(
                     .acc_o  (fir_o                                 )
                 );
             end else begin
-                areg #(
+                acc_reg #(
                     .DATA_WIDTH (DATA_WIDTH),
                     .COE_WIDTH  (COE_WIDTH )
                 ) i_areg (

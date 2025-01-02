@@ -2,7 +2,7 @@ vlib work
 vmap work
 
 vlog fir_filter_tb.sv
-vlog ../areg.sv
+vlog ../acc_reg.sv
 vlog ../fir_filter.sv
 vlog ../axis_if.sv
 
