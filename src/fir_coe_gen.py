@@ -76,8 +76,6 @@ def Hex(num) :
 
     return res[4:]
 
-# This code is contributed by AnkitRai01
-
 file_name = 'coe.mem'
 
 with open (file_name, 'w') as f:
