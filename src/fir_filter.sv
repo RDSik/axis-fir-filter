@@ -102,7 +102,7 @@ module fir_filter #(
             m_axis.tvalid <= (fir_cnt == COE_NUM - 1 || m_axis.tready) ? 1'b1 : 1'b0;
             s_axis.tready <= (s_axis.tvalid) ? 1'b1 : 1'b0;
             if ((s_axis.tready & s_axis.tvalid) || (m_axis.tready & m_axis.tvalid)) begin
-                reg_en  <= 1'b1;
+                reg_en <= 1'b1;
                 if (fir_cnt == COE_NUM - 1) begin
                     fir_cnt <= '0;    
                 end else begin 
