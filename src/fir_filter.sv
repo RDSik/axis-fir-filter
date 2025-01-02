@@ -108,6 +108,8 @@ module fir_filter #(
                 end else begin 
                     fir_cnt <= fir_cnt + 1'b1;
                 end
+            end else begin
+                reg_en <= 1'b0;
             end
         end
     end
